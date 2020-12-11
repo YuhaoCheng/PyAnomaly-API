@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.datatools.evaluate package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.datatools.evaluate package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.evaluate.eval_function">pyanomaly.datatools.evaluate.eval_function module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.evaluate.utils">pyanomaly.datatools.evaluate.utils module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.evaluate">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.datatools.evaluate package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.datatools.evaluate.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-datatools-evaluate-package">
+<h1>pyanomaly.datatools.evaluate package<a class="headerlink" href="#pyanomaly-datatools-evaluate-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.datatools.evaluate.eval_function">
+<span id="pyanomaly-datatools-evaluate-eval-function-module"></span><h2>pyanomaly.datatools.evaluate.eval_function module<a class="headerlink" href="#module-pyanomaly.datatools.evaluate.eval_function" title="Permalink to this headline">¶</a></h2>
+<p>The eval api of the anomaly detection.
+We will store the results in these structure and use off-line style to compute the metric
+results {</p>
+<blockquote>
+<div><blockquote>
+<div><p>'dataset': the name of dataset
+'psnr': the psnr of each testing videos,</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<dl class="py class">
+<dt id="pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.evaluate.eval_function.</code><code class="sig-name descname">ScoreAUCMetrics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">is_training</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.datatools.abstract.html#pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod" title="pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.compute">
+<code class="sig-name descname">compute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result_file_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>result_file_dict = {'train':{description1:sigma0_result_file, description2:sigma1_result_file, .....}, 'val':{description1:sigma0_result_file, description2:sigma1_result_file}}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.eval_method">
+<code class="sig-name descname">eval_method</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">gt</span></em>, <em class="sig-param"><span class="n">verbose</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.eval_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual method to get the eval metrics</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.load_ground_truth">
+<code class="sig-name descname">load_ground_truth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.load_ground_truth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aim to load the gt of dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.load_results">
+<code class="sig-name descname">load_results</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.eval_function.ScoreAUCMetrics.load_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>results' format:
+{</p>
+<blockquote>
+<div><p>'dataset': the name of dataset
+'psnr': the psnr of each testing videos,  # will be deprecated in the future, only keep the 'score' key
+'flow': [], 
+'names': [], 
+'diff_mask': [], 
+'score': the score of each testing videos
+'num_videos': the number of the videos</p>
+</div></blockquote>
+<p>}</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.evaluate.utils">
+<span id="pyanomaly-datatools-evaluate-utils-module"></span><h2>pyanomaly.datatools.evaluate.utils module<a class="headerlink" href="#module-pyanomaly.datatools.evaluate.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.amc_normal_score">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">amc_normal_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wf</span></em>, <em class="sig-param"><span class="n">sf</span></em>, <em class="sig-param"><span class="n">wi</span></em>, <em class="sig-param"><span class="n">si</span></em>, <em class="sig-param"><span class="n">lambada_s</span><span class="o">=</span><span class="default_value">0.2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.amc_normal_score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.amc_score">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">amc_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frame</span></em>, <em class="sig-param"><span class="n">frame_hat</span></em>, <em class="sig-param"><span class="n">flow</span></em>, <em class="sig-param"><span class="n">flow_hat</span></em>, <em class="sig-param"><span class="n">wf</span></em>, <em class="sig-param"><span class="n">wi</span></em>, <em class="sig-param"><span class="n">kernel_size</span><span class="o">=</span><span class="default_value">16</span></em>, <em class="sig-param"><span class="n">stride</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">lambada_s</span><span class="o">=</span><span class="default_value">0.2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.amc_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>wf, wi is different from videos</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.average_psnr">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">average_psnr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.average_psnr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.cal_eer">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">cal_eer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fpr</span></em>, <em class="sig-param"><span class="n">tpr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.cal_eer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.calc_w">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">calc_w</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">w_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.calc_w" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.calculate_psnr">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">calculate_psnr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">logger</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.calculate_psnr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.compute_auc_psnr">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">compute_auc_psnr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">logger</span></em>, <em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">score_type</span><span class="o">=</span><span class="default_value">'normal'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.compute_auc_psnr" title="Permalink to this definition">¶</a></dt>
+<dd><p>For psnr, score_type is always 'normal', means that the higher PSNR, the higher normality</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.compute_auc_score">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">compute_auc_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">logger</span></em>, <em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">score_type</span><span class="o">=</span><span class="default_value">'normal'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.compute_auc_score" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>score_type:</dt><dd><p>normal--&gt; pos_label=0
+abnormal --&gt; pos_label=1
+in dataset, 0 means normal, 1 means abnormal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.compute_eer">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">compute_eer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.compute_eer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.find_max_patch">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">find_max_patch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">diff_map_appe</span></em>, <em class="sig-param"><span class="n">diff_map_flow</span></em>, <em class="sig-param"><span class="n">kernel_size</span><span class="o">=</span><span class="default_value">16</span></em>, <em class="sig-param"><span class="n">stride</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">aggregation</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.find_max_patch" title="Permalink to this definition">¶</a></dt>
+<dd><p>kernel size = window size</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.get_scores_labels">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">get_scores_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.get_scores_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>base the psnr to get the scores of each videos</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.load_pickle_results">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">load_pickle_results</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.load_pickle_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.oc_score">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">oc_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.oc_score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.precision_recall_auc">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">precision_recall_auc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loss_file</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.precision_recall_auc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.psnr_error">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">psnr_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gen_frames</span></em>, <em class="sig-param"><span class="n">gt_frames</span></em>, <em class="sig-param"><span class="n">hat</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.psnr_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the Peak Signal to Noise Ratio error between the generated images and the ground
+truth images.
+&#64;param gen_frames: A tensor of shape [batch_size, height, width, 3]. The frames generated by the</p>
+<blockquote>
+<div><p>generator model.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>&#64;param gt_frames: A tensor of shape [batch_size, height, width, 3]. The ground-truth frames for</dt><dd><p>each frame in gen_frames.</p>
+</dd>
+<dt>&#64;return: A scalar tensor. The mean Peak Signal to Noise Ratio error over each frame in the</dt><dd><p>batch.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.reconstruction_loss">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">reconstruction_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_hat</span></em>, <em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.reconstruction_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>The input is the video clip, and we use the RL as the score.
+RL := Reconstruction Loss</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.evaluate.utils.simple_diff">
+<code class="sig-prename descclassname">pyanomaly.datatools.evaluate.utils.</code><code class="sig-name descname">simple_diff</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frame_true</span></em>, <em class="sig-param"><span class="n">frame_hat</span></em>, <em class="sig-param"><span class="n">flow_true</span></em>, <em class="sig-param"><span class="n">flow_hat</span></em>, <em class="sig-param"><span class="n">aggregation</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.evaluate.utils.simple_diff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.evaluate">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.datatools.evaluate" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

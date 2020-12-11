@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.datatools.abstract package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.datatools.abstract package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract.abstract_datasets_builder">pyanomaly.datatools.abstract.abstract_datasets_builder module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract.abstract_datasets_factory">pyanomaly.datatools.abstract.abstract_datasets_factory module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract.abstract_evaluate_method">pyanomaly.datatools.abstract.abstract_evaluate_method module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract.image_dataset">pyanomaly.datatools.abstract.image_dataset module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract.readers">pyanomaly.datatools.abstract.readers module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract.video_dataset">pyanomaly.datatools.abstract.video_dataset module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.abstract">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.datatools.abstract package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.datatools.abstract.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-datatools-abstract-package">
+<h1>pyanomaly.datatools.abstract package<a class="headerlink" href="#pyanomaly-datatools-abstract-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract.abstract_datasets_builder">
+<span id="pyanomaly-datatools-abstract-abstract-datasets-builder-module"></span><h2>pyanomaly.datatools.abstract.abstract_datasets_builder module<a class="headerlink" href="#module-pyanomaly.datatools.abstract.abstract_datasets_builder" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.abstract_datasets_builder.</code><code class="sig-name descname">AbstractBuilder</code><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder.build">
+<em class="property">abstract </em><code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; torch.utils.data.dataloader.DataLoader<a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>the method to build the dataloader
+the building process includes three parts:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>dataset</p></li>
+<li><p>sampler</p></li>
+<li><p>collect_fn</p></li>
+</ol>
+</div></blockquote>
+<p>===&gt; dataloader</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract.abstract_datasets_factory">
+<span id="pyanomaly-datatools-abstract-abstract-datasets-factory-module"></span><h2>pyanomaly.datatools.abstract.abstract_datasets_factory module<a class="headerlink" href="#module-pyanomaly.datatools.abstract.abstract_datasets_factory" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.abstract_datasets_factory.AbstractDatasetFactory">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.abstract_datasets_factory.</code><code class="sig-name descname">AbstractDatasetFactory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">aug</span></em>, <em class="sig-param"><span class="n">is_training</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_datasets_factory.AbstractDatasetFactory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.abstract_datasets_factory.GetClusterDataset">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.abstract_datasets_factory.</code><code class="sig-name descname">GetClusterDataset</code><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_datasets_factory.GetClusterDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.abstract_datasets_factory.GetWDataset">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.abstract_datasets_factory.</code><code class="sig-name descname">GetWDataset</code><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_datasets_factory.GetWDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract.abstract_evaluate_method">
+<span id="pyanomaly-datatools-abstract-abstract-evaluate-method-module"></span><h2>pyanomaly.datatools.abstract.abstract_evaluate_method module<a class="headerlink" href="#module-pyanomaly.datatools.abstract.abstract_evaluate_method" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.abstract_evaluate_method.</code><code class="sig-name descname">AbstractEvalMethod</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.compute">
+<em class="property">abstract </em><code class="sig-name descname">compute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result_file_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aim to get the final result</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.eval_method">
+<em class="property">abstract </em><code class="sig-name descname">eval_method</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">gt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.eval_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual method to get the eval metrics</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.load_ground_truth">
+<em class="property">abstract </em><code class="sig-name descname">load_ground_truth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.load_ground_truth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aim to load the gt of dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.load_results">
+<em class="property">abstract </em><code class="sig-name descname">load_results</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.abstract_evaluate_method.AbstractEvalMethod.load_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract.image_dataset">
+<span id="pyanomaly-datatools-abstract-image-dataset-module"></span><h2>pyanomaly.datatools.abstract.image_dataset module<a class="headerlink" href="#module-pyanomaly.datatools.abstract.image_dataset" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.image_dataset.</code><code class="sig-name descname">AbstractImageDataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_folder</span></em>, <em class="sig-param"><span class="n">transforms</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset.aug_batch_image">
+<code class="sig-name descname">aug_batch_image</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset.aug_batch_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the transforms to augment one batch image</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset.aug_image">
+<code class="sig-name descname">aug_image</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset.aug_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the transforms to augment one single image</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset.get_image">
+<code class="sig-name descname">get_image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.image_dataset.AbstractImageDataset.get_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get one single image</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract.readers">
+<span id="pyanomaly-datatools-abstract-readers-module"></span><h2>pyanomaly.datatools.abstract.readers module<a class="headerlink" href="#module-pyanomaly.datatools.abstract.readers" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.readers.</code><code class="sig-name descname">GroundTruthLoader</code><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.Avenue">
+<code class="sig-name descname">Avenue</code><em class="property"> = 'Avenue'</em><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.Avenue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.Ped1">
+<code class="sig-name descname">Ped1</code><em class="property"> = 'Ped1'</em><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.Ped1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.Ped2">
+<code class="sig-name descname">Ped2</code><em class="property"> = 'Ped2'</em><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.Ped2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.Shanghai">
+<code class="sig-name descname">Shanghai</code><em class="property"> = 'Shanghai'</em><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.Shanghai" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_name</span></em>, <em class="sig-param"><span class="n">gt_path</span></em>, <em class="sig-param"><span class="n">data_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.set_data_path">
+<code class="sig-name descname">set_data_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.set_data_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.set_gt_path">
+<code class="sig-name descname">set_gt_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gt_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.set_gt_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.readers.GroundTruthLoader.set_name">
+<code class="sig-name descname">set_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.GroundTruthLoader.set_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.readers.ImageLoader">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.readers.</code><code class="sig-name descname">ImageLoader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">read_format</span><span class="o">=</span><span class="default_value">'pillow'</span></em>, <em class="sig-param"><span class="n">channel_num</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">channel_name</span><span class="o">=</span><span class="default_value">'rgb'</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">transforms</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">mean</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">std</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">deterministic</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.ImageLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.readers.ImageLoader.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">flag</span><span class="o">=</span><span class="default_value">'other'</span></em>, <em class="sig-param"><span class="n">array_type</span><span class="o">=</span><span class="default_value">'tensor'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.ImageLoader.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>name: the absolute path of the image
+flag: use the torchvision transforms ----&gt; 'torchvision'</p>
+<blockquote>
+<div><p>use other opensource transforms, like imgaug -----&gt; 'other'</p>
+</div></blockquote>
+<p>array_type:  the return type of the image. 'tensor' | 'ndarray'</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.readers.VideoLoader">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.readers.</code><code class="sig-name descname">VideoLoader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_loader</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">transforms</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">mean</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">std</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.VideoLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.readers.VideoLoader.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frames_list</span></em>, <em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">clip_length</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">step</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">array_type</span><span class="o">=</span><span class="default_value">'tensor'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.readers.VideoLoader.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>array_type: the output format of the video array. The shape of the video data is [C,D,H,W]</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract.video_dataset">
+<span id="pyanomaly-datatools-abstract-video-dataset-module"></span><h2>pyanomaly.datatools.abstract.video_dataset module<a class="headerlink" href="#module-pyanomaly.datatools.abstract.video_dataset" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.video_dataset.</code><code class="sig-name descname">AbstractVideoDataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frames_folder</span></em>, <em class="sig-param"><span class="n">clip_length</span></em>, <em class="sig-param"><span class="n">sampled_clip_length</span></em>, <em class="sig-param"><span class="n">frame_step</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">clip_step</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">video_format</span><span class="o">=</span><span class="default_value">'mp4'</span></em>, <em class="sig-param"><span class="n">fps</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">transforms</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">is_training</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">one_video</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">mini</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cfg</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset.abstract_setup">
+<code class="sig-name descname">abstract_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset.abstract_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.abstract.video_dataset.FrameLevelVideoDataset">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.abstract.video_dataset.</code><code class="sig-name descname">FrameLevelVideoDataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frames_folder</span></em>, <em class="sig-param"><span class="n">clip_length</span></em>, <em class="sig-param"><span class="n">sampled_clip_length</span></em>, <em class="sig-param"><span class="n">frame_step</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">clip_step</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">video_format</span><span class="o">=</span><span class="default_value">'.mp4'</span></em>, <em class="sig-param"><span class="n">fps</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">transforms</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">is_training</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">one_video</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">only_frame</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">mini</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">extra</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cfg</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.video_dataset.FrameLevelVideoDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset" title="pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.datatools.abstract.video_dataset.AbstractVideoDataset</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.video_dataset.FrameLevelVideoDataset.custom_setup">
+<em class="property">abstract </em><code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.video_dataset.FrameLevelVideoDataset.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.abstract.video_dataset.FrameLevelVideoDataset.setup">
+<code class="sig-name descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.abstract.video_dataset.FrameLevelVideoDataset.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.abstract">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.datatools.abstract" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

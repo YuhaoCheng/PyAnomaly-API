@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.core.engine.functions package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.core.engine.functions package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions.amc">pyanomaly.core.engine.functions.amc module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions.anopcn">pyanomaly.core.engine.functions.anopcn module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions.anopred">pyanomaly.core.engine.functions.anopred module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions.memae">pyanomaly.core.engine.functions.memae module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions.ocae">pyanomaly.core.engine.functions.ocae module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions.stae">pyanomaly.core.engine.functions.stae module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.engine.functions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.core.engine.functions package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.core.engine.functions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-core-engine-functions-package">
+<h1>pyanomaly.core.engine.functions package<a class="headerlink" href="#pyanomaly-core-engine-functions-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions.amc">
+<span id="pyanomaly-core-engine-functions-amc-module"></span><h2>pyanomaly.core.engine.functions.amc module<a class="headerlink" href="#module-pyanomaly.core.engine.functions.amc" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.amc.AMCInference">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.amc.</code><code class="sig-name descname">AMCInference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCInference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseInference" title="pyanomaly.core.engine.abstract.base_engine.BaseInference"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseInference</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.amc.AMCInference.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['AMC.INFERENCE']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCInference.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.amc.AMCInference.inference">
+<code class="sig-name descname">inference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCInference.inference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.amc.AMCTrainer">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.amc.</code><code class="sig-name descname">AMCTrainer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseTrainer" title="pyanomaly.core.engine.abstract.base_engine.BaseTrainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseTrainer</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.amc.AMCTrainer.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['AMC.TRAIN']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCTrainer.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.amc.AMCTrainer.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCTrainer.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.amc.AMCTrainer.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.amc.AMCTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>the single step of training the model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions.anopcn">
+<span id="pyanomaly-core-engine-functions-anopcn-module"></span><h2>pyanomaly.core.engine.functions.anopcn module<a class="headerlink" href="#module-pyanomaly.core.engine.functions.anopcn" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNInference">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.anopcn.</code><code class="sig-name descname">ANOPCNInference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNInference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseInference" title="pyanomaly.core.engine.abstract.base_engine.BaseInference"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseInference</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNInference.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['ANOPCN.INFERENCE']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNInference.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNInference.inference">
+<code class="sig-name descname">inference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNInference.inference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.anopcn.</code><code class="sig-name descname">ANOPCNTrainer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseTrainer" title="pyanomaly.core.engine.abstract.base_engine.BaseTrainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseTrainer</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['ANOPCN.TRAIN']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>the single step of training the model</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.train_erm">
+<code class="sig-name descname">train_erm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.train_erm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.train_pcm">
+<code class="sig-name descname">train_pcm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopcn.ANOPCNTrainer.train_pcm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions.anopred">
+<span id="pyanomaly-core-engine-functions-anopred-module"></span><h2>pyanomaly.core.engine.functions.anopred module<a class="headerlink" href="#module-pyanomaly.core.engine.functions.anopred" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDInference">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.anopred.</code><code class="sig-name descname">ANOPREDInference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDInference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseInference" title="pyanomaly.core.engine.abstract.base_engine.BaseInference"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseInference</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDInference.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['ANOPRED.INFERENCE']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDInference.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDInference.inference">
+<code class="sig-name descname">inference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDInference.inference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDTrainer">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.anopred.</code><code class="sig-name descname">ANOPREDTrainer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseTrainer" title="pyanomaly.core.engine.abstract.base_engine.BaseTrainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseTrainer</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDTrainer.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['ANOPRED.TRAIN']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDTrainer.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDTrainer.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDTrainer.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.anopred.ANOPREDTrainer.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.anopred.ANOPREDTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>the single step of training the model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions.memae">
+<span id="pyanomaly-core-engine-functions-memae-module"></span><h2>pyanomaly.core.engine.functions.memae module<a class="headerlink" href="#module-pyanomaly.core.engine.functions.memae" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAEInference">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.memae.</code><code class="sig-name descname">MEMAEInference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAEInference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseInference" title="pyanomaly.core.engine.abstract.base_engine.BaseInference"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseInference</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAEInference.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['MEMAE.INFERENCE']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAEInference.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAEInference.inference">
+<code class="sig-name descname">inference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAEInference.inference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAETrainer">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.memae.</code><code class="sig-name descname">MEMAETrainer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAETrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseTrainer" title="pyanomaly.core.engine.abstract.base_engine.BaseTrainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseTrainer</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAETrainer.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['MEMAE.TRAIN']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAETrainer.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAETrainer.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAETrainer.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.memae.MEMAETrainer.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.memae.MEMAETrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>the single step of training the model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions.ocae">
+<span id="pyanomaly-core-engine-functions-ocae-module"></span><h2>pyanomaly.core.engine.functions.ocae module<a class="headerlink" href="#module-pyanomaly.core.engine.functions.ocae" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAEInference">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.ocae.</code><code class="sig-name descname">OCAEInference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAEInference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseInference" title="pyanomaly.core.engine.abstract.base_engine.BaseInference"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseInference</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAEInference.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['OCAE.INFERENCE']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAEInference.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAEInference.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAEInference.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAEInference.inference">
+<code class="sig-name descname">inference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAEInference.inference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAETrainer">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.ocae.</code><code class="sig-name descname">OCAETrainer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAETrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseTrainer" title="pyanomaly.core.engine.abstract.base_engine.BaseTrainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseTrainer</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAETrainer.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['OCAE.TRAIN']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAETrainer.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAETrainer.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAETrainer.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.ocae.OCAETrainer.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.ocae.OCAETrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>the single step of training the model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions.stae">
+<span id="pyanomaly-core-engine-functions-stae-module"></span><h2>pyanomaly.core.engine.functions.stae module<a class="headerlink" href="#module-pyanomaly.core.engine.functions.stae" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.stae.STAEInference">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.stae.</code><code class="sig-name descname">STAEInference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAEInference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseInference" title="pyanomaly.core.engine.abstract.base_engine.BaseInference"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseInference</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.stae.STAEInference.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['STAE.INFERENCE']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAEInference.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.stae.STAEInference.inference">
+<code class="sig-name descname">inference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAEInference.inference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.engine.functions.stae.STAETrainer">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.engine.functions.stae.</code><code class="sig-name descname">STAETrainer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">defaults</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAETrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.engine.abstract.html#pyanomaly.core.engine.abstract.base_engine.BaseTrainer" title="pyanomaly.core.engine.abstract.base_engine.BaseTrainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.engine.abstract.base_engine.BaseTrainer</span></code></a></p>
+<dl class="py attribute">
+<dt id="pyanomaly.core.engine.functions.stae.STAETrainer.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = ['STAE.TRAIN']</em><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAETrainer.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.stae.STAETrainer.custom_setup">
+<code class="sig-name descname">custom_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAETrainer.custom_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.core.engine.functions.stae.STAETrainer.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.engine.functions.stae.STAETrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>the single step of training the model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.engine.functions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.core.engine.functions" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

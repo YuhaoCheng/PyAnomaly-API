@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.datatools package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.datatools package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.datatools_api">pyanomaly.datatools.datatools_api module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.datatools_registry">pyanomaly.datatools.datatools_registry module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.tools">pyanomaly.datatools.tools module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.datatools package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.datatools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-datatools-package">
+<h1>pyanomaly.datatools package<a class="headerlink" href="#pyanomaly-datatools-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.datatools.abstract.html">pyanomaly.datatools.abstract package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract.abstract_datasets_builder">pyanomaly.datatools.abstract.abstract_datasets_builder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract.abstract_datasets_factory">pyanomaly.datatools.abstract.abstract_datasets_factory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract.abstract_evaluate_method">pyanomaly.datatools.abstract.abstract_evaluate_method module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract.image_dataset">pyanomaly.datatools.abstract.image_dataset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract.readers">pyanomaly.datatools.abstract.readers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract.video_dataset">pyanomaly.datatools.abstract.video_dataset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.abstract.html#module-pyanomaly.datatools.abstract">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.datatools.dataclass.html">pyanomaly.datatools.dataclass package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.dataclass.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pyanomaly.datatools.dataclass.augment.html">pyanomaly.datatools.dataclass.augment package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.augment.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.augment.html#module-pyanomaly.datatools.dataclass.augment.augment_api">pyanomaly.datatools.dataclass.augment.augment_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.augment.html#module-pyanomaly.datatools.dataclass.augment">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyanomaly.datatools.dataclass.sampler.html">pyanomaly.datatools.dataclass.sampler package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.sampler.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.sampler.html#module-pyanomaly.datatools.dataclass.sampler.common">pyanomaly.datatools.dataclass.sampler.common module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.sampler.html#module-pyanomaly.datatools.dataclass.sampler.dist_inf_sampler">pyanomaly.datatools.dataclass.sampler.dist_inf_sampler module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.sampler.html#module-pyanomaly.datatools.dataclass.sampler.inf_sampler">pyanomaly.datatools.dataclass.sampler.inf_sampler module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.datatools.dataclass.sampler.html#module-pyanomaly.datatools.dataclass.sampler">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.dataclass.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.dataclass.html#module-pyanomaly.datatools.dataclass.avenue_ped_shanghai">pyanomaly.datatools.dataclass.avenue_ped_shanghai module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.dataclass.html#module-pyanomaly.datatools.dataclass.datasets_factory">pyanomaly.datatools.dataclass.datasets_factory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.dataclass.html#module-pyanomaly.datatools.dataclass">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.datatools.evaluate.html">pyanomaly.datatools.evaluate package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.evaluate.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.evaluate.html#module-pyanomaly.datatools.evaluate.eval_function">pyanomaly.datatools.evaluate.eval_function module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.evaluate.html#module-pyanomaly.datatools.evaluate.utils">pyanomaly.datatools.evaluate.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.datatools.evaluate.html#module-pyanomaly.datatools.evaluate">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.datatools.datatools_api">
+<span id="pyanomaly-datatools-datatools-api-module"></span><h2>pyanomaly.datatools.datatools_api module<a class="headerlink" href="#module-pyanomaly.datatools.datatools_api" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.datatools_api.DataAPI">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.datatools_api.</code><code class="sig-name descname">DataAPI</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">is_training</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.datatools_api.DataAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.datatools.abstract.html#pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder" title="pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.datatools.abstract.abstract_datasets_builder.AbstractBuilder</span></code></a></p>
+<p>The API class is used for getting the torch.data.Dataloader dictionary</p>
+<dl class="py attribute">
+<dt id="pyanomaly.datatools.datatools_api.DataAPI.NAME">
+<code class="sig-name descname">NAME</code><em class="property"> = 'DatasetAPI'</em><a class="headerlink" href="#pyanomaly.datatools.datatools_api.DataAPI.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.datatools.datatools_api.DataAPI.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.datatools_api.DataAPI.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>The building method
+Args:</p>
+<blockquote>
+<div><p>None</p>
+</div></blockquote>
+<dl>
+<dt>Returns:</dt><dd><p>dataloader_dict(OrderedDict): The dictionary contains the dataloader used in training or val/test process
+For example:
+{</p>
+<blockquote>
+<div><dl>
+<dt>'train':{</dt><dd><dl class="simple">
+<dt>'general_data_dict':{</dt><dd><p>'all': torch.data.Dataloader</p>
+</dd>
+</dl>
+<p>},
+'w_dataset_dict': {</p>
+<blockquote>
+<div><p>'01': torch.data.Dataloader, 
+... ...</p>
+</div></blockquote>
+<p>},
+... ...</p>
+</dd>
+</dl>
+<p>},
+'val':{</p>
+<blockquote>
+<div><dl class="simple">
+<dt>'general_dataset_dict':{</dt><dd><p>'01': torch.data.Dataloader,
+'02': torch.data.Dataloader,
+'03': torch.data.Dataloder,
+... ...</p>
+</dd>
+</dl>
+<p>},
+... ...</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.datatools_api.EvaluateAPI">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.datatools_api.</code><code class="sig-name descname">EvaluateAPI</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">is_training</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.datatools_api.EvaluateAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class to get the Evaluation object</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.datatools_registry">
+<span id="pyanomaly-datatools-datatools-registry-module"></span><h2>pyanomaly.datatools.datatools_registry module<a class="headerlink" href="#module-pyanomaly.datatools.datatools_registry" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+</div>
+<div class="section" id="module-pyanomaly.datatools.tools">
+<span id="pyanomaly-datatools-tools-module"></span><h2>pyanomaly.datatools.tools module<a class="headerlink" href="#module-pyanomaly.datatools.tools" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.datatools.tools.RecordResult">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">RecordResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fpr</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tpr</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">thresholds</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">auc</span><span class="o">=</span><span class="default_value">- inf</span></em>, <em class="sig-param"><span class="n">dataset</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">loss_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sigma</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.RecordResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.datatools.tools.RecordResult.get_threshold">
+<code class="sig-name descname">get_threshold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.RecordResult.get_threshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.tools.collect_fn">
+<code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">collect_fn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.collect_fn" title="Permalink to this definition">¶</a></dt>
+<dd><p>image_b, image_a, image, image_f, label, detection_result = batch</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.tools.collect_fn_local">
+<code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">collect_fn_local</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.collect_fn_local" title="Permalink to this definition">¶</a></dt>
+<dd><p>image_b, image_a, image, image_f, crop_objects = batch</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.tools.decide_back_front">
+<code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">decide_back_front</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_path</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">'testing_vad'</span></em>, <em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.decide_back_front" title="Permalink to this definition">¶</a></dt>
+<dd><p>decide the back and front, save in json
+Args:</p>
+<blockquote>
+<div><p>dataset_path: e.g. './data/shanghaitech/training/frames'
+duration: step, e.g. current-3, current+3</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.tools.make_global_db">
+<code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">make_global_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_path</span></em>, <em class="sig-param"><span class="n">split</span><span class="o">=</span><span class="default_value">'testing'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.make_global_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the database based on the detections
+Args:</p>
+<blockquote>
+<div><p>data_path: e.g. 'data/shanghaitech/normal'</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.tools.make_objects_box_db">
+<code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">make_objects_box_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_path</span></em>, <em class="sig-param"><span class="n">split</span><span class="o">=</span><span class="default_value">'training'</span></em>, <em class="sig-param"><span class="n">det_threshold</span><span class="o">=</span><span class="default_value">0.95</span></em>, <em class="sig-param"><span class="n">time_file</span><span class="o">=</span><span class="default_value">'./training_3.json'</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">'none'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.make_objects_box_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the database based on the detections
+Args:</p>
+<blockquote>
+<div><p>data_path: e.g. 'data/shanghaitech/normal'
+det_threshold: 0.5</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.tools.make_objects_db">
+<code class="sig-prename descclassname">pyanomaly.datatools.tools.</code><code class="sig-name descname">make_objects_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_path</span></em>, <em class="sig-param"><span class="n">split</span><span class="o">=</span><span class="default_value">'training'</span></em>, <em class="sig-param"><span class="n">det_threshold</span><span class="o">=</span><span class="default_value">0.95</span></em>, <em class="sig-param"><span class="n">time_file</span><span class="o">=</span><span class="default_value">'./training_3.json'</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">'none'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.tools.make_objects_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the database based on the detections
+Args:</p>
+<blockquote>
+<div><p>data_path: e.g. 'data/shanghaitech/normal'
+det_threshold: 0.5</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.datatools" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

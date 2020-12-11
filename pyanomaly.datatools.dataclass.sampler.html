@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.datatools.dataclass.sampler package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.datatools.dataclass.sampler package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.dataclass.sampler.common">pyanomaly.datatools.dataclass.sampler.common module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.dataclass.sampler.dist_inf_sampler">pyanomaly.datatools.dataclass.sampler.dist_inf_sampler module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.dataclass.sampler.inf_sampler">pyanomaly.datatools.dataclass.sampler.inf_sampler module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.datatools.dataclass.sampler">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.datatools.dataclass.sampler package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.datatools.dataclass.sampler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-datatools-dataclass-sampler-package">
+<h1>pyanomaly.datatools.dataclass.sampler package<a class="headerlink" href="#pyanomaly-datatools-dataclass-sampler-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.datatools.dataclass.sampler.common">
+<span id="pyanomaly-datatools-dataclass-sampler-common-module"></span><h2>pyanomaly.datatools.dataclass.sampler.common module<a class="headerlink" href="#module-pyanomaly.datatools.dataclass.sampler.common" title="Permalink to this headline">¶</a></h2>
+<p>This file contains primitives for multi-gpu communication.
+This is useful when doing distributed training.</p>
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.all_gather">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">all_gather</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">group</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.all_gather" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run all_gather on arbitrary picklable data (not necessarily tensors).</p>
+<dl>
+<dt>Args:</dt><dd><p>data: any picklable object
+group: a torch process group. By default, will use a group which</p>
+<blockquote>
+<div><p>contains all ranks on gloo backend.</p>
+</div></blockquote>
+</dd>
+<dt>Returns:</dt><dd><p>list[data]: list of data gathered from each rank</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.gather">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">gather</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">dst</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">group</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.gather" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run gather on arbitrary picklable data (not necessarily tensors).</p>
+<dl>
+<dt>Args:</dt><dd><p>data: any picklable object
+dst (int): destination rank
+group: a torch process group. By default, will use a group which</p>
+<blockquote>
+<div><p>contains all ranks on gloo backend.</p>
+</div></blockquote>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>list[data]: on dst, a list of data gathered from each rank. Otherwise,</dt><dd><p>an empty list.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.get_local_rank">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">get_local_rank</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.get_local_rank" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Returns:</dt><dd><p>The rank of the current process within the local (per-machine) process group.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.get_local_size">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">get_local_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.get_local_size" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Returns:</dt><dd><p>The size of the per-machine process group,
+i.e. the number of processes per machine.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.get_rank">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">get_rank</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.get_rank" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.get_world_size">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">get_world_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.get_world_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.is_main_process">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">is_main_process</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.is_main_process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.reduce_dict">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">reduce_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_dict</span></em>, <em class="sig-param"><span class="n">average</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.reduce_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reduce the values in the dictionary from all processes so that process with rank
+0 has the reduced results.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>input_dict (dict): inputs to be reduced. All the values must be scalar CUDA Tensor.
+average (bool): whether to do average or sum</p>
+</dd>
+<dt>Returns:</dt><dd><p>a dict with the same keys as input_dict, after reduction.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.shared_random_seed">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">shared_random_seed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.shared_random_seed" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>int: a random number that is the same across all workers.</dt><dd><p>If workers need a shared RNG, they can use this shared seed to
+create one.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>All workers must call this function, otherwise it will deadlock.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.datatools.dataclass.sampler.common.synchronize">
+<code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.common.</code><code class="sig-name descname">synchronize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.common.synchronize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function to synchronize (barrier) among all processes when
+using distributed training</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.dataclass.sampler.dist_inf_sampler">
+<span id="pyanomaly-datatools-dataclass-sampler-dist-inf-sampler-module"></span><h2>pyanomaly.datatools.dataclass.sampler.dist_inf_sampler module<a class="headerlink" href="#module-pyanomaly.datatools.dataclass.sampler.dist_inf_sampler" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.datatools.dataclass.sampler.dist_inf_sampler.DistTrainSampler">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.dist_inf_sampler.</code><code class="sig-name descname">DistTrainSampler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">shuffle</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">seed</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.dist_inf_sampler.DistTrainSampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.sampler.Sampler</span></code></p>
+<p>refer <a class="reference external" href="https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/samplers/distributed_sampler.py">https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/samplers/distributed_sampler.py</a></p>
+<p>In training, we only care about the &quot;infinite stream&quot; of training data.
+So this sampler produces an infinite stream of indices and
+all workers cooperate to correctly shuffle the indices and sample different indices.
+The samplers in each worker effectively produces <cite>indices[worker_id::num_workers]</cite>
+where <cite>indices</cite> is an infinite stream of indices consisting of
+<cite>shuffle(range(size)) + shuffle(range(size)) + ...</cite> (if shuffle is True)
+or <cite>range(size) + range(size) + ...</cite> (if shuffle is False)</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.datatools.dataclass.sampler.dist_inf_sampler.InferenceSampler">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.dist_inf_sampler.</code><code class="sig-name descname">InferenceSampler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.dist_inf_sampler.InferenceSampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.sampler.Sampler</span></code></p>
+<p>refer <a class="reference external" href="https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/samplers/distributed_sampler.py">https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/samplers/distributed_sampler.py</a>
+Produce indices for inference.
+Inference needs to run on the __exact__ set of samples,
+therefore when the total number of samples is not divisible by the number of workers,
+this sampler produces different number of samples on different workers.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.dataclass.sampler.inf_sampler">
+<span id="pyanomaly-datatools-dataclass-sampler-inf-sampler-module"></span><h2>pyanomaly.datatools.dataclass.sampler.inf_sampler module<a class="headerlink" href="#module-pyanomaly.datatools.dataclass.sampler.inf_sampler" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.datatools.dataclass.sampler.inf_sampler.TrainSampler">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.datatools.dataclass.sampler.inf_sampler.</code><code class="sig-name descname">TrainSampler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">seed</span></em>, <em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">shuffle</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.datatools.dataclass.sampler.inf_sampler.TrainSampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.sampler.Sampler</span></code></p>
+<p>Generate the infinite stream, not support dist
+However, the inference not use this!!</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.datatools.dataclass.sampler">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.datatools.dataclass.sampler" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

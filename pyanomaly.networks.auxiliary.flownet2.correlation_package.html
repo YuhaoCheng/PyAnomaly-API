@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.networks.auxiliary.flownet2.correlation_package package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.networks.auxiliary.flownet2.correlation_package package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation">pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation module</a></li>
+<li><a class="reference internal" href="#pyanomaly-networks-auxiliary-flownet2-correlation-package-setup-module">pyanomaly.networks.auxiliary.flownet2.correlation_package.setup module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.correlation_package">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.networks.auxiliary.flownet2.correlation_package package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.networks.auxiliary.flownet2.correlation_package.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-networks-auxiliary-flownet2-correlation-package-package">
+<h1>pyanomaly.networks.auxiliary.flownet2.correlation_package package<a class="headerlink" href="#pyanomaly-networks-auxiliary-flownet2-correlation-package-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation">
+<span id="pyanomaly-networks-auxiliary-flownet2-correlation-package-correlation-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.Correlation">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.</code><code class="sig-name descname">Correlation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pad_size</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">kernel_size</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_displacement</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">stride1</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">stride2</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">corr_multiply</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.Correlation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.Correlation.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input1</span></em>, <em class="sig-param"><span class="n">input2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.Correlation.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.</code><code class="sig-name descname">CorrelationFunction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pad_size</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">kernel_size</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">max_displacement</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">stride1</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">stride2</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">corr_multiply</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.autograd.function.Function</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.backward">
+<code class="sig-name descname">backward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">grad_output</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.backward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a formula for differentiating the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx</span></code> as the first argument, followed by
+as many outputs did <a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward" title="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> return, and it should return as many
+tensors, as there were inputs to <a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward" title="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Each argument is the
+gradient w.r.t the given output, and each returned value should be the
+gradient w.r.t. the corresponding input.</p>
+<p>The context can be used to retrieve tensors saved during the forward
+pass. It also has an attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx.needs_input_grad</span></code> as a tuple
+of booleans representing whether each input needs gradient. E.g.,
+<a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.backward" title="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.backward"><code class="xref py py-func docutils literal notranslate"><span class="pre">backward()</span></code></a> will have <code class="docutils literal notranslate"><span class="pre">ctx.needs_input_grad[0]</span> <span class="pre">=</span> <span class="pre">True</span></code> if the
+first input to <a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward" title="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> needs gradient computated w.r.t. the
+output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input1</span></em>, <em class="sig-param"><span class="n">input2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation.CorrelationFunction.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the operation.</p>
+<p>This function is to be overridden by all subclasses.</p>
+<p>It must accept a context ctx as the first argument, followed by any
+number of arguments (tensors or other types).</p>
+<p>The context can be used to store tensors that can be then retrieved
+during the backward pass.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pyanomaly-networks-auxiliary-flownet2-correlation-package-setup-module">
+<h2>pyanomaly.networks.auxiliary.flownet2.correlation_package.setup module<a class="headerlink" href="#pyanomaly-networks-auxiliary-flownet2-correlation-package-setup-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.correlation_package">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.correlation_package" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

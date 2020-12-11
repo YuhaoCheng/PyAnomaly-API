@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.networks.auxiliary.flownet2 package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.networks.auxiliary.flownet2 package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetC">pyanomaly.networks.auxiliary.flownet2.FlowNetC module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetFusion">pyanomaly.networks.auxiliary.flownet2.FlowNetFusion module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetS">pyanomaly.networks.auxiliary.flownet2.FlowNetS module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetSD">pyanomaly.networks.auxiliary.flownet2.FlowNetSD module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.models">pyanomaly.networks.auxiliary.flownet2.models module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2.submodules">pyanomaly.networks.auxiliary.flownet2.submodules module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.auxiliary.flownet2">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.networks.auxiliary.flownet2 package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.networks.auxiliary.flownet2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-networks-auxiliary-flownet2-package">
+<h1>pyanomaly.networks.auxiliary.flownet2 package<a class="headerlink" href="#pyanomaly-networks-auxiliary-flownet2-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.channelnorm_package.html">pyanomaly.networks.auxiliary.flownet2.channelnorm_package package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.channelnorm_package.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.channelnorm_package.html#module-pyanomaly.networks.auxiliary.flownet2.channelnorm_package.channelnorm">pyanomaly.networks.auxiliary.flownet2.channelnorm_package.channelnorm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.channelnorm_package.html#pyanomaly-networks-auxiliary-flownet2-channelnorm-package-setup-module">pyanomaly.networks.auxiliary.flownet2.channelnorm_package.setup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.channelnorm_package.html#module-pyanomaly.networks.auxiliary.flownet2.channelnorm_package">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.correlation_package.html">pyanomaly.networks.auxiliary.flownet2.correlation_package package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.correlation_package.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.correlation_package.html#module-pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation">pyanomaly.networks.auxiliary.flownet2.correlation_package.correlation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.correlation_package.html#pyanomaly-networks-auxiliary-flownet2-correlation-package-setup-module">pyanomaly.networks.auxiliary.flownet2.correlation_package.setup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.correlation_package.html#module-pyanomaly.networks.auxiliary.flownet2.correlation_package">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.resample2d_package.html">pyanomaly.networks.auxiliary.flownet2.resample2d_package package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.resample2d_package.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.resample2d_package.html#module-pyanomaly.networks.auxiliary.flownet2.resample2d_package.resample2d">pyanomaly.networks.auxiliary.flownet2.resample2d_package.resample2d module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.resample2d_package.html#pyanomaly-networks-auxiliary-flownet2-resample2d-package-setup-module">pyanomaly.networks.auxiliary.flownet2.resample2d_package.setup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.resample2d_package.html#module-pyanomaly.networks.auxiliary.flownet2.resample2d_package">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.FlowNetC">
+<span id="pyanomaly-networks-auxiliary-flownet2-flownetc-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.FlowNetC module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetC" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.FlowNetC.</code><code class="sig-name descname">FlowNetC</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.FlowNetFusion">
+<span id="pyanomaly-networks-auxiliary-flownet2-flownetfusion-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.FlowNetFusion module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetFusion" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetFusion.FlowNetFusion">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.FlowNetFusion.</code><code class="sig-name descname">FlowNetFusion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetFusion.FlowNetFusion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetFusion.FlowNetFusion.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetFusion.FlowNetFusion.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.FlowNetS">
+<span id="pyanomaly-networks-auxiliary-flownet2-flownets-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.FlowNetS module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetS" title="Permalink to this headline">¶</a></h2>
+<p>Portions of this code copyright 2017, Clement Pinard</p>
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.FlowNetS.</code><code class="sig-name descname">FlowNetS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">input_channels</span><span class="o">=</span><span class="default_value">12</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.FlowNetSD">
+<span id="pyanomaly-networks-auxiliary-flownet2-flownetsd-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.FlowNetSD module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.FlowNetSD" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.FlowNetSD.</code><code class="sig-name descname">FlowNetSD</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.models">
+<span id="pyanomaly-networks-auxiliary-flownet2-models-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.models module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.models.</code><code class="sig-name descname">FlowNet2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2.init_deconv_bilinear">
+<code class="sig-name descname">init_deconv_bilinear</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">weight</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2.init_deconv_bilinear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2C">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.models.</code><code class="sig-name descname">FlowNet2C</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2C" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC" title="pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.networks.auxiliary.flownet2.FlowNetC.FlowNetC</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2C.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2C.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CS">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.models.</code><code class="sig-name descname">FlowNet2CS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CS.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CS.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CSS">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.models.</code><code class="sig-name descname">FlowNet2CSS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CSS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CSS.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2CSS.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2S">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.models.</code><code class="sig-name descname">FlowNet2S</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2S" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS" title="pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.networks.auxiliary.flownet2.FlowNetS.FlowNetS</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2S.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2S.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2SD">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.models.</code><code class="sig-name descname">FlowNet2SD</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">batchNorm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">div_flow</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2SD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD" title="pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.networks.auxiliary.flownet2.FlowNetSD.FlowNetSD</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.models.FlowNet2SD.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.models.FlowNet2SD.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2.submodules">
+<span id="pyanomaly-networks-auxiliary-flownet2-submodules-module"></span><h2>pyanomaly.networks.auxiliary.flownet2.submodules module<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2.submodules" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.conv">
+<code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">conv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batchNorm</span></em>, <em class="sig-param"><span class="n">in_planes</span></em>, <em class="sig-param"><span class="n">out_planes</span></em>, <em class="sig-param"><span class="n">kernel_size</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">stride</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.deconv">
+<code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">deconv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_planes</span></em>, <em class="sig-param"><span class="n">out_planes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.deconv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.i_conv">
+<code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">i_conv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batchNorm</span></em>, <em class="sig-param"><span class="n">in_planes</span></em>, <em class="sig-param"><span class="n">out_planes</span></em>, <em class="sig-param"><span class="n">kernel_size</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">stride</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">bias</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.i_conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.init_deconv_bilinear">
+<code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">init_deconv_bilinear</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">weight</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.init_deconv_bilinear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.predict_flow">
+<code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">predict_flow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_planes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.predict_flow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.save_grad">
+<code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">save_grad</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">grads</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.save_grad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.tofp16">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">tofp16</code><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.tofp16" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.tofp16.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.tofp16.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.tofp32">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.auxiliary.flownet2.submodules.</code><code class="sig-name descname">tofp32</code><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.tofp32" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.auxiliary.flownet2.submodules.tofp32.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.auxiliary.flownet2.submodules.tofp32.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.auxiliary.flownet2">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.networks.auxiliary.flownet2" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

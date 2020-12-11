@@ -1,0 +1,756 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.networks.meta.base package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.networks.meta.base package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.meta.base.commonness">pyanomaly.networks.meta.base.commonness module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.meta.base.convolution_lstm">pyanomaly.networks.meta.base.convolution_lstm module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.meta.base.prednet">pyanomaly.networks.meta.base.prednet module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.meta.base">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.networks.meta.base package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.networks.meta.base.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-networks-meta-base-package">
+<h1>pyanomaly.networks.meta.base package<a class="headerlink" href="#pyanomaly-networks-meta-base-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.networks.meta.base.commonness">
+<span id="pyanomaly-networks-meta-base-commonness-module"></span><h2>pyanomaly.networks.meta.base.commonness module<a class="headerlink" href="#module-pyanomaly.networks.meta.base.commonness" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.BasicConv2d">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">BasicConv2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.BasicConv2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>The basic convaolution with bn</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.BasicConv2d.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.BasicConv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.ConcatDeconv2d">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">ConcatDeconv2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c_in</span></em>, <em class="sig-param"><span class="n">c_out</span></em>, <em class="sig-param"><span class="n">dropout_prob</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.ConcatDeconv2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.ConcatDeconv2d.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x1</span></em>, <em class="sig-param"><span class="n">x2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.ConcatDeconv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.ConcatDeconv2dReduce">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">ConcatDeconv2dReduce</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c_in</span></em>, <em class="sig-param"><span class="n">c_out</span></em>, <em class="sig-param"><span class="n">dropout_prob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.ConcatDeconv2dReduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>the outpuct channel is the c_out, c_out &lt;= c_in</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.ConcatDeconv2dReduce.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x1</span></em>, <em class="sig-param"><span class="n">x2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.ConcatDeconv2dReduce.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Conv2dLeakly">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Conv2dLeakly</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c_in</span></em>, <em class="sig-param"><span class="n">c_out</span></em>, <em class="sig-param"><span class="n">bn_flag</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Conv2dLeakly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>The basic convolution with leakly relu
+conv-bn-leakyReLU</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Conv2dLeakly.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Conv2dLeakly.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Deconv2d">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Deconv2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c_in</span></em>, <em class="sig-param"><span class="n">c_out</span></em>, <em class="sig-param"><span class="n">dropout_prob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Deconv2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Deconv2d.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Deconv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.DoubleConv">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">DoubleConv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em>, <em class="sig-param"><span class="n">mid_channels</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.DoubleConv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>(convolution =&gt; [BN] =&gt; ReLU) * 2</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.DoubleConv.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.DoubleConv.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Down">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Down</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Downscaling with maxpool then double conv</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Down.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Down.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Inception</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c_in</span></em>, <em class="sig-param"><span class="n">c_out</span></em>, <em class="sig-param"><span class="n">max_filter_size</span><span class="o">=</span><span class="default_value">7</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception3x3">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Inception3x3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception3x3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception3x3.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception3x3.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception5x5">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Inception5x5</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception5x5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception5x5.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception5x5.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception7x7">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Inception7x7</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception7x7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Inception7x7.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Inception7x7.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.NLayerDiscriminator">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">NLayerDiscriminator</code><span class="sig-paren">(</span><em class="sig-param">input_nc</em>, <em class="sig-param">ndf=64</em>, <em class="sig-param">n_layers=3</em>, <em class="sig-param">norm_layer=&lt;class 'torch.nn.modules.batchnorm.BatchNorm2d'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.NLayerDiscriminator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Defines a PatchGAN discriminator</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.NLayerDiscriminator.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.NLayerDiscriminator.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Standard forward.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.OutConv">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">OutConv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">out_channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.OutConv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.OutConv.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.OutConv.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.PixelDiscriminator">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">PixelDiscriminator</code><span class="sig-paren">(</span><em class="sig-param">cfg</em>, <em class="sig-param">use_norm=False</em>, <em class="sig-param">norm_layer=&lt;class 'torch.nn.modules.batchnorm.BatchNorm2d'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.PixelDiscriminator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Defines a 1x1 PatchGAN discriminator (pixelGAN)</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.PixelDiscriminator.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.PixelDiscriminator.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Standard forward.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.commonness.Up">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.commonness.</code><code class="sig-name descname">Up</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_channels</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">out_channels</span></em>, <em class="sig-param"><span class="n">bilinear</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Upscaling then double conv</p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.commonness.Up.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x1</span></em>, <em class="sig-param"><span class="n">x2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.commonness.Up.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.meta.base.convolution_lstm">
+<span id="pyanomaly-networks-meta-base-convolution-lstm-module"></span><h2>pyanomaly.networks.meta.base.convolution_lstm module<a class="headerlink" href="#module-pyanomaly.networks.meta.base.convolution_lstm" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.convolution_lstm.ConvLSTM">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.convolution_lstm.</code><code class="sig-name descname">ConvLSTM</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_channels</span></em>, <em class="sig-param"><span class="n">hidden_channels</span></em>, <em class="sig-param"><span class="n">kernel_size</span></em>, <em class="sig-param"><span class="n">step</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">effective_step</span><span class="o">=</span><span class="default_value">[1]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.convolution_lstm.ConvLSTM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.convolution_lstm.ConvLSTM.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.convolution_lstm.ConvLSTM.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.convolution_lstm.ConvLSTMCell">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.convolution_lstm.</code><code class="sig-name descname">ConvLSTMCell</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_channels</span></em>, <em class="sig-param"><span class="n">hidden_channels</span></em>, <em class="sig-param"><span class="n">kernel_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.convolution_lstm.ConvLSTMCell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.convolution_lstm.ConvLSTMCell.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">h</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.convolution_lstm.ConvLSTMCell.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.convolution_lstm.ConvLSTMCell.init_hidden">
+<code class="sig-name descname">init_hidden</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batch_size</span></em>, <em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">shape</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.convolution_lstm.ConvLSTMCell.init_hidden" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.meta.base.prednet">
+<span id="pyanomaly-networks-meta-base-prednet-module"></span><h2>pyanomaly.networks.meta.base.prednet module<a class="headerlink" href="#module-pyanomaly.networks.meta.base.prednet" title="Permalink to this headline">¶</a></h2>
+<p>PredNet in PyTorch.</p>
+<dl class="py class">
+<dt id="pyanomaly.networks.meta.base.prednet.PredNet">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.meta.base.prednet.</code><code class="sig-name descname">PredNet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stack_sizes</span></em>, <em class="sig-param"><span class="n">R_stack_sizes</span></em>, <em class="sig-param"><span class="n">A_filter_sizes</span></em>, <em class="sig-param"><span class="n">Ahat_filter_sizes</span></em>, <em class="sig-param"><span class="n">R_filter_sizes</span></em>, <em class="sig-param"><span class="n">pixel_max</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">error_activation</span><span class="o">=</span><span class="default_value">'relu'</span></em>, <em class="sig-param"><span class="n">A_activation</span><span class="o">=</span><span class="default_value">'relu'</span></em>, <em class="sig-param"><span class="n">LSTM_activation</span><span class="o">=</span><span class="default_value">'tanh'</span></em>, <em class="sig-param"><span class="n">LSTM_inner_activation</span><span class="o">=</span><span class="default_value">'hard_sigmoid'</span></em>, <em class="sig-param"><span class="n">output_mode</span><span class="o">=</span><span class="default_value">'error'</span></em>, <em class="sig-param"><span class="n">extrap_start_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">data_format</span><span class="o">=</span><span class="default_value">'channels_last'</span></em>, <em class="sig-param"><span class="n">return_sequences</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.PredNet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>PredNet realized by zcr.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>stack_sizes:</dt><dd><ul class="simple">
+<li><p>Number of channels in targets (A) and predictions (Ahat) in each layer of the architecture.</p></li>
+<li><p>Length of stack_size (i.e. len(stack_size) and we use <cite>num_layers</cite> to denote it) is the number of layers in the architecture.</p></li>
+<li><p>First element is the number of channels in the input.</p></li>
+<li><p>e.g., (3, 16, 32) would correspond to a 3 layer architecture that takes in RGB images and
+has 16 and 32 channels in the second and third layers, respectively.</p></li>
+<li><p>下标为(lay + 1)的值即为pytorch中第lay个卷积层的out_channels参数. 例如上述16对应到lay 0层(即输入层)的A和Ahat的out_channels是16.</p></li>
+</ul>
+</dd>
+<dt>R_stack_sizes:</dt><dd><ul class="simple">
+<li><p>Number of channels in the representation (R) modules.</p></li>
+<li><p>Length must equal length of stack_sizes, but the number of channels per layer can be different.</p></li>
+<li><p>即pytorch中卷积层的out_channels参数.</p></li>
+</ul>
+</dd>
+<dt>A_filter_sizes:</dt><dd><ul class="simple">
+<li><p>Filter sizes for the target (A) modules. (except the target (A) in lowest layer (i.e., input image))</p></li>
+<li><p>Has length of len(stack_sizes) - 1.</p></li>
+<li><p>e.g., (3, 3) would mean that targets for layers 2 and 3 are computed by a 3x3 convolution of
+the errors (E) from the layer below (followed by max-pooling)</p></li>
+<li><p>即pytorch中卷积层的kernel_size.</p></li>
+</ul>
+</dd>
+<dt>Ahat_filter_sizes:</dt><dd><ul class="simple">
+<li><p>Filter sizes for the prediction (Ahat) modules.</p></li>
+<li><p>Has length equal to length of stack_sizes.</p></li>
+<li><p>e.g., (3, 3, 3) would mean that the predictions for each layer are computed by a 3x3 convolution
+of the representation (R) modules at each layer.</p></li>
+<li><p>即pytorch中卷积层的kernel_size.</p></li>
+</ul>
+</dd>
+<dt>R_filter_sizes:</dt><dd><ul class="simple">
+<li><p>Filter sizes for the representation (R) modules.</p></li>
+<li><p>Has length equal to length of stack_sizes.</p></li>
+<li><p>Corresponds to the filter sizes for all convolutions in the LSTM.</p></li>
+<li><p>即pytorch中卷积层的kernel_size.</p></li>
+</ul>
+</dd>
+<dt>pixel_max:</dt><dd><ul class="simple">
+<li><p>The maximum pixel value.</p></li>
+<li><p>Used to clip the pixel-layer prediction.</p></li>
+</ul>
+</dd>
+<dt>error_activation:</dt><dd><ul class="simple">
+<li><p>Activation function for the error (E) units.</p></li>
+</ul>
+</dd>
+<dt>A_activation:</dt><dd><ul class="simple">
+<li><p>Activation function for the target (A) and prediction (A_hat) units.</p></li>
+</ul>
+</dd>
+<dt>LSTM_activation:</dt><dd><ul class="simple">
+<li><p>Activation function for the cell and hidden states of the LSTM.</p></li>
+</ul>
+</dd>
+<dt>LSTM_inner_activation:</dt><dd><ul class="simple">
+<li><p>Activation function for the gates in the LSTM.</p></li>
+</ul>
+</dd>
+<dt>output_mode:</dt><dd><ul class="simple">
+<li><p>Either 'error', 'prediction', 'all' or layer specification (e.g., R2, see below).</p></li>
+<li><dl class="simple">
+<dt>Controls what is outputted by the PredNet.</dt><dd><ul>
+<li><dl class="simple">
+<dt>if 'error':</dt><dd><p>The mean response of the error (E) units of each layer will be outputted.
+That is, the output shape will be (batch_size, num_layers).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>if 'prediction':</dt><dd><p>The frame prediction will be outputted.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>if 'all':</dt><dd><p>The output will be the frame prediction concatenated with the mean layer errors.
+The frame prediction is flattened before concatenation.
+Note that nomenclature of 'all' means all TYPE of the output (i.e., <cite>error</cite> and <cite>prediction</cite>), but should not be confused with returning all of the layers of the model.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>For returning the features of a particular layer, output_mode should be of the form unit_type + layer_number.</dt><dd><p>e.g., to return the features of the LSTM &quot;representational&quot; units in the lowest layer, output_mode should be specificied as 'R0'.
+The possible unit types are 'R', 'Ahat', 'A', and 'E' corresponding to the 'representation', 'prediction', 'target', and 'error' units respectively.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt>extrap_start_time:</dt><dd><ul class="simple">
+<li><p>Time step for which model will start extrapolating.</p></li>
+<li><p>Starting at this time step, the prediction from the previous time step will be treated as the &quot;actual&quot;</p></li>
+</ul>
+</dd>
+<dt>data_format:</dt><dd><ul class="simple">
+<li><p>'channels_first': (channel, Height, Width)</p></li>
+<li><p>'channels_last' : (Height, Width, channel)</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.prednet.PredNet.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">A0_withTimeStep</span></em>, <em class="sig-param"><span class="n">initial_states</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.PredNet.forward" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>A0_withTimeStep is the input from dataloader. Its shape is: (batch_size, timesteps, 3, Height, Width).</dt><dd><p>说白了, 这个A0_withTimeStep就是dataloader加载出来的原始图像, 即最底层(layer 0)的A, 只不过在batch_size和timestep两个维度扩展了.</p>
+</dd>
+</dl>
+<p>initial_states  is a list of pytorch-tensors. 这个states参数其实就是初始状态, 因为这个forword函数本身是不被循环执行的.</p>
+<dl class="simple">
+<dt>NOTE: 这个foward函数目的是为了实现原Keras版本的 <cite>step</cite> 函数, 但是和后者不太一样.  因为原代码的PredNet类是</dt><dd><p>继承了Keras中的`Recurrent`类, 所以貌似该父类就实现了将dataloader(即原代码中的SequenceGenerator)加载
+的数据(batch_size, timesteps, 3, H, W)分解为(batch_size, 3, H, W), 然后循环timesteps次求解.
+而这里的forward需要自己实现循环timesteps次. 这里的A的shape就是从dataloader中来的5D tensor (batch_size, timesteps, 3, Height, Width),
+原代码中step函数的输入`x`的shape是4D tensor (batch_size, 3, Height, Width).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.prednet.PredNet.get_initial_states">
+<code class="sig-name descname">get_initial_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_shape</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.PredNet.get_initial_states" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>input_shape is like: (batch_size, timeSteps, Height, Width, 3)</dt><dd><p>or: (batch_size, timeSteps, 3, Height, Width)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.prednet.PredNet.isNotTopestLayer">
+<code class="sig-name descname">isNotTopestLayer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">layerIndex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.PredNet.isNotTopestLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>judge if the layerIndex is not the topest layer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.prednet.PredNet.make_layers">
+<code class="sig-name descname">make_layers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.PredNet.make_layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>equal to the <cite>build</cite> method in original version.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.networks.meta.base.prednet.PredNet.step">
+<code class="sig-name descname">step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">A</span></em>, <em class="sig-param"><span class="n">states</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.PredNet.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>这个step函数是和原代码中的`step`函数是等价的. 是PredNet的核心逻辑所在.
+类比于标准LSTM的实现方式, 这个step函数的角色相当于LSTMCell, 而下面的forward函数相当于LSTM类.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>A: 4D tensor with the shape of (batch_size, 3, Height, Width). 就是从A_withTimeStep按照时间步抽取出来的数据.
+states 和 <a href="#id1"><span class="problematic" id="id2">`</span></a>forward`函数的`initial_states`的形式完全相同, 只是后者是初始化的PredNet状态, 而这里的states是在timesteps内运算时的PredNet参数.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.meta.base.prednet.batch_flatten">
+<code class="sig-prename descclassname">pyanomaly.networks.meta.base.prednet.</code><code class="sig-name descname">batch_flatten</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.batch_flatten" title="Permalink to this definition">¶</a></dt>
+<dd><p>equal to the <cite>batch_flatten</cite> in keras.
+x is a Variable in pytorch</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.meta.base.prednet.get_activationFunc">
+<code class="sig-prename descclassname">pyanomaly.networks.meta.base.prednet.</code><code class="sig-name descname">get_activationFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">act_str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.get_activationFunc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.meta.base.prednet.hard_sigmoid">
+<code class="sig-prename descclassname">pyanomaly.networks.meta.base.prednet.</code><code class="sig-name descname">hard_sigmoid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.meta.base.prednet.hard_sigmoid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><p>hard sigmoid function by zcr.</p></li>
+<li><p>Computes element-wise hard sigmoid of x.</p></li>
+<li><dl class="simple">
+<dt>what is hard sigmoid?</dt><dd><p>Segment-wise linear approximation of sigmoid. Faster than sigmoid.
+Returns 0. if x &lt; -2.5, 1. if x &gt; 2.5. In -2.5 &lt;= x &lt;= 2.5, returns 0.2 * x + 0.5.</p>
+</dd>
+</dl>
+</li>
+<li><p>See e.g. <a class="reference external" href="https://github.com/Theano/Theano/blob/master/theano/tensor/nnet/sigm.py#L279">https://github.com/Theano/Theano/blob/master/theano/tensor/nnet/sigm.py#L279</a></p></li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.meta.base">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.networks.meta.base" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

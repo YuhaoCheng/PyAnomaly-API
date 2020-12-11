@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.utils package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.utils package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.utils.recorders">pyanomaly.utils.recorders module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.utils.system">pyanomaly.utils.system module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.utils.tools">pyanomaly.utils.tools module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.utils package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-utils-package">
+<h1>pyanomaly.utils package<a class="headerlink" href="#pyanomaly-utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.utils.recorders">
+<span id="pyanomaly-utils-recorders-module"></span><h2>pyanomaly.utils.recorders module<a class="headerlink" href="#module-pyanomaly.utils.recorders" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="pyanomaly.utils.recorders.create_logger">
+<code class="sig-prename descclassname">pyanomaly.utils.recorders.</code><code class="sig-name descname">create_logger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">root_path</span></em>, <em class="sig-param"><span class="n">cfg</span></em>, <em class="sig-param"><span class="n">cfg_name</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">'trian'</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">'None'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.recorders.create_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the root logger. 
+The rest of log file is using the same time as this time
+Args:</p>
+<blockquote>
+<div><p>root_path: Path object, the root path of the project
+cfg: the config class of the whole process
+cfg_name: the name of the config file(yaml file)
+phase: the flag indicate the stage, trian, val or test
+verbose: some note</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>logger: the logger instance
+final_output_dir: the dir of final output to store the results, such as the accuracy, the images or some thing
+tensorboard_log_dir: 
+cfg_name 
+time_str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.recorders.get_tensorboard">
+<code class="sig-prename descclassname">pyanomaly.utils.recorders.</code><code class="sig-name descname">get_tensorboard</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tensorboard_log_dir</span></em>, <em class="sig-param"><span class="n">time_stamp</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">final_log_file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.recorders.get_tensorboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the tensorboard writer of
+Args:</p>
+<blockquote>
+<div><p>tensorboard_log_dir: the root of the tensorboard
+time_stamp: the time when the training start
+model_name: the model type</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.utils.system">
+<span id="pyanomaly-utils-system-module"></span><h2>pyanomaly.utils.system module<a class="headerlink" href="#module-pyanomaly.utils.system" title="Permalink to this headline">¶</a></h2>
+<p>This file is to set up the setting about the system, torch, CUDA, cudnn and so on based on the xxx.yaml</p>
+<dl class="py function">
+<dt id="pyanomaly.utils.system.parse_args">
+<code class="sig-prename descclassname">pyanomaly.utils.system.</code><code class="sig-name descname">parse_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.system.parse_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.system.system_setup">
+<code class="sig-prename descclassname">pyanomaly.utils.system.</code><code class="sig-name descname">system_setup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.system.system_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.utils.tools">
+<span id="pyanomaly-utils-tools-module"></span><h2>pyanomaly.utils.tools module<a class="headerlink" href="#module-pyanomaly.utils.tools" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyanomaly.utils.tools.Statistic">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">Statistic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'cuda'</span></em>, <em class="sig-param"><span class="n">input_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">test_iters</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.Statistic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.tools.compute_color">
+<code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">compute_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em>, <em class="sig-param"><span class="n">v</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.compute_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute optical flow color map
+:param u: horizontal optical flow
+:param v: vertical optical flow
+:return:</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.utils.tools.data_prefetcher">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">data_prefetcher</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loader</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.data_prefetcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyanomaly.utils.tools.data_prefetcher.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.data_prefetcher.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyanomaly.utils.tools.data_prefetcher.preload">
+<code class="sig-name descname">preload</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.data_prefetcher.preload" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.tools.flow2Y">
+<code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">flow2Y</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">flow_data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.flow2Y" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert optical flow into color image
+:param flow_data:
+:return: color image</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.tools.flow2img">
+<code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">flow2img</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">flow_data</span></em>, <em class="sig-param"><span class="n">output_format</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.flow2img" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the flow to 3 channel</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.tools.make_color_wheel">
+<code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">make_color_wheel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.make_color_wheel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate color wheel according Middlebury color code
+:return: Color wheel</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.tools.readFlow">
+<code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">readFlow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.readFlow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read .flo file in Middlebury format</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.utils.tools.writeFlow">
+<code class="sig-prename descclassname">pyanomaly.utils.tools.</code><code class="sig-name descname">writeFlow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">uv</span></em>, <em class="sig-param"><span class="n">v</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.utils.tools.writeFlow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write optical flow to file.</p>
+<p>If v is None, uv is assumed to contain both u and v channels,
+stacked in depth.
+Original code by Deqing Sun, adapted from Daniel Scharstein.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.utils" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

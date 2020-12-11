@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.core.hook.functions package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.core.hook.functions package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.amc_hooks">pyanomaly.core.hook.functions.amc_hooks module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.anopcn_hooks">pyanomaly.core.hook.functions.anopcn_hooks module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.anopred_hooks">pyanomaly.core.hook.functions.anopred_hooks module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.base">pyanomaly.core.hook.functions.base module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.memae_hooks">pyanomaly.core.hook.functions.memae_hooks module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.ocae_hooks">pyanomaly.core.hook.functions.ocae_hooks module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions.stae_hooks">pyanomaly.core.hook.functions.stae_hooks module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.core.hook.functions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.core.hook.functions package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.core.hook.functions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-core-hook-functions-package">
+<h1>pyanomaly.core.hook.functions package<a class="headerlink" href="#pyanomaly-core-hook-functions-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.amc_hooks">
+<span id="pyanomaly-core-hook-functions-amc-hooks-module"></span><h2>pyanomaly.core.hook.functions.amc_hooks module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.amc_hooks" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.amc_hooks.AMCEvaluateHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.amc_hooks.</code><code class="sig-name descname">AMCEvaluateHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.amc_hooks.AMCEvaluateHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook" title="pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.amc_hooks.AMCEvaluateHook.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.amc_hooks.AMCEvaluateHook.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the results of the model
+!!! Will change, e.g. accuracy, mAP.....
+!!! Or can call other methods written by the official</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.anopcn_hooks">
+<span id="pyanomaly-core-hook-functions-anopcn-hooks-module"></span><h2>pyanomaly.core.hook.functions.anopcn_hooks module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.anopcn_hooks" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.anopcn_hooks.AnoPCNEvaluateHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.anopcn_hooks.</code><code class="sig-name descname">AnoPCNEvaluateHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.anopcn_hooks.AnoPCNEvaluateHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook" title="pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.anopcn_hooks.AnoPCNEvaluateHook.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.anopcn_hooks.AnoPCNEvaluateHook.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the results of the model
+!!! Will change, e.g. accuracy, mAP.....
+!!! Or can call other methods written by the official</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.anopred_hooks">
+<span id="pyanomaly-core-hook-functions-anopred-hooks-module"></span><h2>pyanomaly.core.hook.functions.anopred_hooks module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.anopred_hooks" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.anopred_hooks.AnoPredEvaluateHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.anopred_hooks.</code><code class="sig-name descname">AnoPredEvaluateHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.anopred_hooks.AnoPredEvaluateHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook" title="pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.anopred_hooks.AnoPredEvaluateHook.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.anopred_hooks.AnoPredEvaluateHook.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the results of the model
+!!! Will change, e.g. accuracy, mAP.....
+!!! Or can call other methods written by the official</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.base">
+<span id="pyanomaly-core-hook-functions-base-module"></span><h2>pyanomaly.core.hook.functions.base module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.base" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.base.TSNEHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.base.</code><code class="sig-name descname">TSNEHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.base.TSNEHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.HookBase" title="pyanomaly.core.hook.abstract.abstract_hook.HookBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.HookBase</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.base.TSNEHook.after_step">
+<code class="sig-name descname">after_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.base.TSNEHook.after_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after each iteration.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.base.VisScoreHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.base.</code><code class="sig-name descname">VisScoreHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.base.VisScoreHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.HookBase" title="pyanomaly.core.hook.abstract.abstract_hook.HookBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.HookBase</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.base.VisScoreHook.after_step">
+<code class="sig-name descname">after_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.base.VisScoreHook.after_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after each iteration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.memae_hooks">
+<span id="pyanomaly-core-hook-functions-memae-hooks-module"></span><h2>pyanomaly.core.hook.functions.memae_hooks module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.memae_hooks" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.memae_hooks.MemAEEvaluateHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.memae_hooks.</code><code class="sig-name descname">MemAEEvaluateHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.memae_hooks.MemAEEvaluateHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook" title="pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.memae_hooks.MemAEEvaluateHook.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.memae_hooks.MemAEEvaluateHook.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the results of the model
+!!! Will change, e.g. accuracy, mAP.....
+!!! Or can call other methods written by the official</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.ocae_hooks">
+<span id="pyanomaly-core-hook-functions-ocae-hooks-module"></span><h2>pyanomaly.core.hook.functions.ocae_hooks module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.ocae_hooks" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.ocae_hooks.ClusterHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.ocae_hooks.</code><code class="sig-name descname">ClusterHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.ocae_hooks.ClusterHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.HookBase" title="pyanomaly.core.hook.abstract.abstract_hook.HookBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.HookBase</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.ocae_hooks.ClusterHook.after_step">
+<code class="sig-name descname">after_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.ocae_hooks.ClusterHook.after_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after each iteration.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.ocae_hooks.OCEvaluateHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.ocae_hooks.</code><code class="sig-name descname">OCEvaluateHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.ocae_hooks.OCEvaluateHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook" title="pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.ocae_hooks.OCEvaluateHook.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.ocae_hooks.OCEvaluateHook.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the results of the model
+!!! Will change, e.g. accuracy, mAP.....
+!!! Or can call other methods written by the official</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions.stae_hooks">
+<span id="pyanomaly-core-hook-functions-stae-hooks-module"></span><h2>pyanomaly.core.hook.functions.stae_hooks module<a class="headerlink" href="#module-pyanomaly.core.hook.functions.stae_hooks" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.core.hook.functions.stae_hooks.STAEEvaluateHook">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.core.hook.functions.stae_hooks.</code><code class="sig-name descname">STAEEvaluateHook</code><a class="headerlink" href="#pyanomaly.core.hook.functions.stae_hooks.STAEEvaluateHook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pyanomaly.core.hook.abstract.html#pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook" title="pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyanomaly.core.hook.abstract.abstract_hook.EvaluateHook</span></code></a></p>
+<dl class="py method">
+<dt id="pyanomaly.core.hook.functions.stae_hooks.STAEEvaluateHook.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current_step</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.core.hook.functions.stae_hooks.STAEEvaluateHook.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the model base on some methods
+Args:</p>
+<blockquote>
+<div><p>current_step: The current step at present</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>results: The magnitude of the method based on this evaluation metric</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.core.hook.functions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.core.hook.functions" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

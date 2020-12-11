@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Python" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyanomaly.networks package &mdash; pyanomaly 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyanomaly
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyanomaly.networks package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.model_api">pyanomaly.networks.model_api module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks.model_registry">pyanomaly.networks.model_registry module</a></li>
+<li><a class="reference internal" href="#module-pyanomaly.networks">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyanomaly</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyanomaly.networks package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyanomaly.networks.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyanomaly-networks-package">
+<h1>pyanomaly.networks package<a class="headerlink" href="#pyanomaly-networks-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.networks.abstract.html">pyanomaly.networks.abstract package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.abstract.html#module-pyanomaly.networks.abstract">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.networks.auxiliary.html">pyanomaly.networks.auxiliary package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html">pyanomaly.networks.auxiliary.flownet2 package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2.FlowNetC">pyanomaly.networks.auxiliary.flownet2.FlowNetC module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2.FlowNetFusion">pyanomaly.networks.auxiliary.flownet2.FlowNetFusion module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2.FlowNetS">pyanomaly.networks.auxiliary.flownet2.FlowNetS module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2.FlowNetSD">pyanomaly.networks.auxiliary.flownet2.FlowNetSD module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2.models">pyanomaly.networks.auxiliary.flownet2.models module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2.submodules">pyanomaly.networks.auxiliary.flownet2.submodules module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.flownet2.html#module-pyanomaly.networks.auxiliary.flownet2">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyanomaly.networks.auxiliary.liteflownet.html">pyanomaly.networks.auxiliary.liteflownet package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.liteflownet.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.liteflownet.html#module-pyanomaly.networks.auxiliary.liteflownet.models">pyanomaly.networks.auxiliary.liteflownet.models module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.auxiliary.liteflownet.html#module-pyanomaly.networks.auxiliary.liteflownet">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.auxiliary.html#module-pyanomaly.networks.auxiliary">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyanomaly.networks.meta.html">pyanomaly.networks.meta package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pyanomaly.networks.meta.base.html">pyanomaly.networks.meta.base package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.base.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.base.html#module-pyanomaly.networks.meta.base.commonness">pyanomaly.networks.meta.base.commonness module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.base.html#module-pyanomaly.networks.meta.base.convolution_lstm">pyanomaly.networks.meta.base.convolution_lstm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.base.html#module-pyanomaly.networks.meta.base.prednet">pyanomaly.networks.meta.base.prednet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.base.html#module-pyanomaly.networks.meta.base">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html">pyanomaly.networks.meta.pcn_parts package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html#module-pyanomaly.networks.meta.pcn_parts.convolution_lstm">pyanomaly.networks.meta.pcn_parts.convolution_lstm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html#pyanomaly-networks-meta-pcn-parts-erm-module">pyanomaly.networks.meta.pcn_parts.erm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html#pyanomaly-networks-meta-pcn-parts-pcm-module">pyanomaly.networks.meta.pcn_parts.pcm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html#module-pyanomaly.networks.meta.pcn_parts.prednet">pyanomaly.networks.meta.pcn_parts.prednet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyanomaly.networks.meta.pcn_parts.html#module-pyanomaly.networks.meta.pcn_parts">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta.amc_networks">pyanomaly.networks.meta.amc_networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta.anopcn_networks">pyanomaly.networks.meta.anopcn_networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta.anopred_networks">pyanomaly.networks.meta.anopred_networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta.memae_networks">pyanomaly.networks.meta.memae_networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta.ocae_networks">pyanomaly.networks.meta.ocae_networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta.stae_networks">pyanomaly.networks.meta.stae_networks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyanomaly.networks.meta.html#module-pyanomaly.networks.meta">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyanomaly.networks.model_api">
+<span id="pyanomaly-networks-model-api-module"></span><h2>pyanomaly.networks.model_api module<a class="headerlink" href="#module-pyanomaly.networks.model_api" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+<dl class="py class">
+<dt id="pyanomaly.networks.model_api.ModelAPI">
+<em class="property">class </em><code class="sig-prename descclassname">pyanomaly.networks.model_api.</code><code class="sig-name descname">ModelAPI</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.model_api.ModelAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>For example:
+If we have a couple in MODEL.parts like this: ['meta_G', 'Generator'], you will get the dict {'G': Generator&lt;object at 0x12345456&gt;}</p>
+<dl class="py attribute">
+<dt id="pyanomaly.networks.model_api.ModelAPI.MODEL_TYPE">
+<code class="sig-name descname">MODEL_TYPE</code><em class="property"> = ['e2e', 'me2e', 'ae2e', 'ame2e']</em><a class="headerlink" href="#pyanomaly.networks.model_api.ModelAPI.MODEL_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pyanomaly.networks.model_api.mode">
+<code class="sig-prename descclassname">pyanomaly.networks.model_api.</code><code class="sig-name descname">mode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">dim</span><span class="o">=</span><span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">keepdim</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">values</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">indices</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyanomaly.networks.model_api.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a namedtuple <code class="docutils literal notranslate"><span class="pre">(values,</span> <span class="pre">indices)</span></code> where <code class="docutils literal notranslate"><span class="pre">values</span></code> is the mode
+value of each row of the <code class="xref py py-attr docutils literal notranslate"><span class="pre">input</span></code> tensor in the given dimension
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">dim</span></code>, i.e. a value which appears most often
+in that row, and <code class="docutils literal notranslate"><span class="pre">indices</span></code> is the index location of each mode value found.</p>
+<p>By default, <code class="xref py py-attr docutils literal notranslate"><span class="pre">dim</span></code> is the last dimension of the <code class="xref py py-attr docutils literal notranslate"><span class="pre">input</span></code> tensor.</p>
+<p>If <code class="xref py py-attr docutils literal notranslate"><span class="pre">keepdim</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, the output tensors are of the same size as
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">input</span></code> except in the dimension <code class="xref py py-attr docutils literal notranslate"><span class="pre">dim</span></code> where they are of size 1.
+Otherwise, <code class="xref py py-attr docutils literal notranslate"><span class="pre">dim</span></code> is squeezed (see <code class="xref py py-func docutils literal notranslate"><span class="pre">torch.squeeze()</span></code>), resulting
+in the output tensors having 1 fewer dimension than <code class="xref py py-attr docutils literal notranslate"><span class="pre">input</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function is not defined for <code class="docutils literal notranslate"><span class="pre">torch.cuda.Tensor</span></code> yet.</p>
+</div>
+<dl class="simple">
+<dt>Args:</dt><dd><p>input (Tensor): the input tensor.
+dim (int): the dimension to reduce.
+keepdim (bool): whether the output tensor has <code class="xref py py-attr docutils literal notranslate"><span class="pre">dim</span></code> retained or not.
+values (Tensor, optional): the output tensor
+indices (Tensor, optional): the output index tensor</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">tensor([6, 5, 1, 0, 2])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">long</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">torch</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">torch.return_types.mode(values=tensor([6, 5, 1, 0, 2]), indices=tensor([2, 2, 2, 2, 2]))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyanomaly.networks.model_registry">
+<span id="pyanomaly-networks-model-registry-module"></span><h2>pyanomaly.networks.model_registry module<a class="headerlink" href="#module-pyanomaly.networks.model_registry" title="Permalink to this headline">¶</a></h2>
+<p>&#64;author:  Yuhao Cheng
+&#64;contact: yuhao.cheng[at]outlook.com</p>
+</div>
+<div class="section" id="module-pyanomaly.networks">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyanomaly.networks" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Yuhao Cheng
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
